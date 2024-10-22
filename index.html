@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentForm</title>
+    <link href="C:\play ground\projects\Student_Form_P1\index.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1 class="stu">STUDENT FORM</h1>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="C:\play ground\projects\Student_Form_P1\index.html" id="hoem">Home</a></li>
+                <li><a href="C:\play ground\projects\Student_Form_P1\studetail.html">Student Details</a></li>
+                <li><a href="C:\play ground\projects\Student_Form_P1\about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="body">
+        <div class="names">
+            <div class="head">
+                <spane>Name:</spane>
+            </div>
+            <div class="head">
+                <spane>Age:</spane>
+            </div>
+            <div class="head">
+                <spane>Course:</spane>
+            </div>
+            <div class="head">
+                <spane>Gender:</spane>
+            </div>
+            <div class="head">
+                <spane>Emali</spane>
+            </div>
+        </div>
+        <div class="inputs">
+            <div class="input tex">
+                <input type="text" placeholder="Name" id="in1">
+            </div>
+            <div class="input tex">
+                <input type="text" placeholder="Age" id="in2">
+            </div>
+            <div class="input tex">
+                <select id="in3">
+                    <option>Select</option>
+                    <option>C</option>
+                    <option>C++</option>
+                    <option>Java</option>
+                    <option>Python</option>
+                </select>
+            </div>
+            <div class="input">
+                <form id="in4">
+                    <input type="radio" name="gender" value="Male">
+                    <p class="gen">Male</p>
+                    <input type="radio" name="gender" value="Female">
+                    <p class="gen">Female</p>
+                </form>
+            </div>
+            <div class="input tex ">
+                <input type="email" placeholder="Email" id="in5">
+            </div>
+        </div>
+        <div class="btn">
+            <button id="btn1" onclick="save()">Save</button>
+            <p id="para">If you wants to view your details click "STUDENT DETAILS"</p>
+        </div>
+    </div>
+    <div class="body1">
+        <table border="1" id="table">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>course</th>
+                <th>Gender</th>
+                <th>Email</th>
+                <th>Delete</th>
+            </tr>
+            <tr id="tr1">
+                <td>Arun kumar</td>
+                <td>19</td>
+                <td>Java</td>
+                <td>Male</td>
+                <td>tsarunkumar2005@gmail.com</td>
+                <td><button class="del" onclick="delet1()">Delete</button></td>
+            </tr>
+        
+        </table>
+    </div>
+        <button id="add" onclick="addition()">+</button>
+</body>
+
+<script src="index.js"></script>
+
+</html>
